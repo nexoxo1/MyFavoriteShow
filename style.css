@@ -1,0 +1,68 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: rgb(181, 190, 196);
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🌟</text></svg>") 16 0,auto; /*!emojicursor.app*/
+}
+
+h1{
+  color: rgb(22, 32, 54)
+}
+
+h2{
+  color: rgb(30, 49, 61);
+}
+
+p{
+  color: rgb(62, 84, 99);
+}
+
+ol{
+  color:rgb (62, 84, 99);
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 1000px;
+  height: 1000px;
+  boarder: 1px solid #f1f1f1;
+  perspective: 1000px; /*3d effect*/
+}
+.flip-card-inner {
+position: relative;
+width: 100%;
+height: 100%;
+text-align: center;
+transition: transform 0.6s;
+transform-style: preserve-3d;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+position: absolute;
+width: 100%;
+height: 100%;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+}
+
+.flip-card-front {
+background-color: #bbb;
+color: black;
+}
+
+.flip-card-back {
+background-color: #aa5c1d;
+color: white;
+transform: rotateY(180deg);
+}
+
+
+
